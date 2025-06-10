@@ -93,7 +93,7 @@ Script responsible for analyzing whether the environment follows best practices 
 
 ---
 
-### ⚙️ O que ele verifica?
+### ⚙️ What does it check?
 
 * If the number of **replicas** s sufficient to ensure high availability.
 * If resources  **recursos (CPU e memória)** are defined.
