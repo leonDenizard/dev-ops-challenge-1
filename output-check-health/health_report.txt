@@ -1,0 +1,175 @@
+
+ Relatório de saúde: preprod
+----------------------------------------
+✔️ Réplicas suficientes: 2
+✔️ Recursos definidos: CPU=450m, Memória=256Mi
+❌ Variável de ambiente 'NODE_ENV' não usa secretKeyRef
+❌ Estratégia de deploy não recomendada: 'blue-green'
+
+ Relatório de saúde: preprod
+----------------------------------------
+✔️ Réplicas suficientes: 3
+✔️ Recursos definidos: CPU=500m, Memória=256Mi
+❌ Variável de ambiente 'NODE_ENV' não usa secretKeyRef
+✔️ Estratégia de deploy 'rolling' válida (maxUnavailable=1, maxSurge=1)
+
+ Relatório de saúde: production
+----------------------------------------
+✔️ Réplicas suficientes: 3
+✔️ Recursos definidos: CPU=500m, Memória=256Mi
+❌ Variável de ambiente 'NODE_ENV' não usa secretKeyRef
+✔️ Estratégia de deploy 'rolling' válida (maxUnavailable=1, maxSurge=1)
+
+ Relatório de saúde: production
+----------------------------------------
+✔️ Réplicas suficientes: 3
+✔️ Recursos definidos: CPU=500m, Memória=256Mi
+❌ Variável de ambiente 'NODE_ENV' não usa secretKeyRef
+✔️ Estratégia de deploy 'rolling' válida (maxUnavailable=1, maxSurge=1)
+
+ Relatório de saúde: production
+----------------------------------------
+✔️ Réplicas suficientes: 3
+✔️ Recursos definidos: CPU=500m, Memória=256Mi
+❌ Variável de ambiente 'NODE_ENV' não usa secretKeyRef
+✔️ Estratégia de deploy 'rolling' válida (maxUnavailable=1, maxSurge=1)
+
+ Relatório de saúde: staging
+----------------------------------------
+❌ Réplicas insuficientes: 1
+❌ Recursos não definidos corretamente
+❌ Variável de ambiente 'NODE_ENV' não usa secretKeyRef
+✔️ Estratégia de deploy 'rolling' válida (maxUnavailable=1, maxSurge=1)
+
+ Relatório de saúde: preprod
+----------------------------------------
+✔️ Réplicas suficientes: 2
+✔️ Recursos definidos: CPU=450m, Memória=256Mi
+❌ Variável de ambiente 'NODE_ENV' não usa secretKeyRef
+❌ Estratégia de deploy não recomendada: 'blue-green'
+
+ Relatório de saúde: preprod
+----------------------------------------
+✔️ Réplicas suficientes: 2
+✔️ Recursos definidos: CPU=450m, Memória=256Mi
+❌ Variável de ambiente 'NODE_ENV' não usa secretKeyRef
+❌ Estratégia de deploy não recomendada: 'blue-green'
+
+ Relatório de saúde: production
+----------------------------------------
+✔️ Réplicas suficientes: 3
+✔️ Recursos definidos: CPU=500m, Memória=256Mi
+✔️ Todas as variáveis de ambiente usam secrets
+✔️ Estratégia de deploy 'rolling' válida (maxUnavailable=1, maxSurge=1)
+
+ Health report : production
+----------------------------------------
+✔️ Réplicas suficientes: 3
+✔️ Recursos definidos: CPU=500m, Memória=256Mi
+✔️ Todas as variáveis de ambiente usam secrets
+✔️ Estratégia de deploy 'rolling' válida (maxUnavailable=1, maxSurge=1)
+
+ Health report : production
+----------------------------------------
+✔️ Enough replicas: 3
+✔️ Defined Resources: CPU=500m, Memória=256Mi
+✔️ All environment variables use secrets
+✔️ Valid 'rolling' deployment strategy (maxUnavailable=1, maxSurge=1)
+
+ Health report : preprod
+----------------------------------------
+✔️ Enough replicas: 2
+✔️ Defined Resources: CPU=450m, Memória=256Mi
+❌ Environment variable 'NODE_ENV' dont use secretKeyRef
+❌ Deployment strategy not recommended: 'blue-green', recommended 'rolling'
+
+ Health report : staging
+----------------------------------------
+❌ Insufficient replicas: 1
+❌ Resources not defined correctly
+❌ Environment variable 'NODE_ENV' dont use secretKeyRef
+✔️ Valid 'rolling' deployment strategy (maxUnavailable=1, maxSurge=1)
+
+ Health report : staging
+----------------------------------------
+❌ Insufficient replicas: 1 minimal replicas = 2
+❌ Resources not defined correctly
+❌ Environment variable 'NODE_ENV' dont use secretKeyRef
+✔️ Valid 'rolling' deployment strategy (maxUnavailable=1, maxSurge=1)
+
+ Health report : preprod
+----------------------------------------
+✔️ Enough replicas: 2
+✔️ Defined Resources: CPU=450m, Memória=256Mi
+❌ Environment variable 'NODE_ENV' dont use secretKeyRef
+❌ Deployment strategy not recommended: 'blue-green', recommended 'rolling'
+
+ Health report : staging
+----------------------------------------
+❌ Insufficient replicas: 1 minimal replicas 2
+❌ Resources not defined correctly
+❌ Environment variable 'NODE_ENV' dont use secretKeyRef
+✔️ Valid 'rolling' deployment strategy (maxUnavailable=1, maxSurge=1)
+
+ Health report : staging
+----------------------------------------
+❌ Insufficient replicas: 1 minimal replicas 2
+❌ Resources not defined correctly CPU=400m, Memória=None
+❌ Environment variable 'NODE_ENV' dont use secretKeyRef
+✔️ Valid 'rolling' deployment strategy (maxUnavailable=1, maxSurge=1)
+
+ Health report : staging
+----------------------------------------
+❌ Insufficient replicas: 1 minimal replicas 2
+❌ Resources not defined correctly CPU=400m, Memory=None
+❌ Environment variable 'NODE_ENV' dont use secretKeyRef
+✔️ Valid 'rolling' deployment strategy (maxUnavailable=1, maxSurge=1)
+
+ Health report : preprod
+----------------------------------------
+✔️ Enough replicas: 2
+✔️ Defined Resources: CPU=450m, Memory=256Mi
+❌ Environment variable 'NODE_ENV' dont use secretKeyRef
+❌ Deployment strategy not recommended: 'blue-green', recommended 'rolling'
+
+ Health report : production
+----------------------------------------
+✔️ Enough replicas: 3
+✔️ Defined Resources: CPU=500m, Memory=256Mi
+✔️ All environment variables use secrets
+✔️ Valid 'rolling' deployment strategy (maxUnavailable=1, maxSurge=1)
+
+ Health report : staging
+----------------------------------------
+❌ Insufficient replicas: 1 minimal replicas 2
+❌ Resources not defined correctly CPU=400m, Memory=None
+❌ Environment variable 'NODE_ENV' dont use secretKeyRef
+✔️ Valid 'rolling' deployment strategy (maxUnavailable=1, maxSurge=1)
+
+ Health report : staging
+----------------------------------------
+❌ Insufficient replicas: 1 minimal replicas 2
+❌ Resources not defined correctly CPU=400m, Memory=None
+❌ Environment variable 'NODE_ENV' does not use secretKeyRef
+✔️ Valid 'rolling' deployment strategy (maxUnavailable=1, maxSurge=1)
+
+ Health report : production
+----------------------------------------
+✔️ Enough replicas: 3
+✔️ Defined Resources: CPU=500m, Memory=256Mi
+✔️ All environment variables use secrets
+✔️ Valid 'rolling' deployment strategy (maxUnavailable=1, maxSurge=1)
+
+ Health report : staging
+----------------------------------------
+❌ Insufficient replicas: 1 minimal replicas 2
+❌ Resources not defined correctly CPU=400m, Memory=None
+❌ Environment variable 'NODE_ENV' dont use secretKeyRef
+✔️ Valid 'rolling' deployment strategy (maxUnavailable=1, maxSurge=1)
+
+ Health report : preprod
+----------------------------------------
+✔️ Enough replicas: 2
+✔️ Defined Resources: CPU=450m, Memory=256Mi
+❌ Environment variable 'NODE_ENV' dont use secretKeyRef
+❌ Deployment strategy not recommended: 'blue-green', recommended 'rolling'

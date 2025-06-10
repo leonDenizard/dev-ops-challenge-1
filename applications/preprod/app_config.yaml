@@ -1,0 +1,44 @@
+app_name: anota-desk-admin
+language: node
+framework: angular
+version: v3.2.2-rc1
+
+deployment:
+  replicas: 2
+  resources:
+    cpu: 450m
+    memory: 256Mi
+  env:
+    - name: NODE_ENV
+      value: preprod
+    - name: DB_URL
+      valueFrom:
+        secretKeyRef:
+          name: mongo-secret-preprod
+          key: db-url
+    - name: JWT_SECRET
+      valueFrom:
+        secretKeyRef:
+          name: jwt-secret-preprod
+          key: secret-key
+
+services:
+  - name: mongodb
+    type: external
+    urlFrom:
+      secretKeyRef:
+        name: mongo-secret-preprod
+        key: db-url
+  - name: redis
+    type: external
+    urlFrom:
+      secretKeyRef:
+        name: redis-secret-preprod
+        key: redis-url
+
+deploy_strategy:
+  type: blue-green
+
+ci_cd:
+  provider: github-actions
+  workflow: deploy-preprod.yml

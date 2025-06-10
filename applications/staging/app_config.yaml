@@ -1,0 +1,46 @@
+app_name: anota-desk-admin
+language: node
+framework: angular
+version: v3.2.1
+
+deployment:
+  replicas: 1
+  resources:
+    cpu: 400m
+    
+  env:
+    - name: NODE_ENV
+      value: staging
+    - name: DB_URL
+      valueFrom:
+        secretKeyRef:
+          name: mongo-secret-staging
+          key: db-url
+    - name: JWT_SECRET
+      valueFrom:
+        secretKeyRef:
+          name: jwt-secret-staging
+          key: secret-key
+
+services:
+  - name: mongodb
+    type: external
+    urlFrom:
+      secretKeyRef:
+        name: mongo-secret-staging
+        key: db-url
+  - name: redis
+    type: external
+    urlFrom:
+      secretKeyRef:
+        name: redis-secret-staging
+        key: redis-url
+
+deploy_strategy:
+  type: rolling
+  maxUnavailable: 1
+  maxSurge: 1
+
+ci_cd:
+  provider: github-actions
+  workflow: deploy-staging.yml
