@@ -7,13 +7,19 @@
 +> 📌 Scripts must be run from the `scripts/` folder, as relative paths assume that position.
 
 ```
-applications/
-├── production/
-│ └── app_config.yaml
-├── staging/
-│ └── app_config.yaml
-├── preprod/
-│ └── app_config.yaml
+dev-ops-challenge-1/
+├── applications/
+│   ├── production/
+│   │   └── app_config.yaml
+│   ├── staging/
+│   │   └── app_config.yaml
+│   └── preprod/
+│       └── app_config.yaml
+├── output-check-health/
+├── scripts/
+├── README.md
+└── README.pt-BR.md
+
 ```
 
 ## 📌 Migrates
